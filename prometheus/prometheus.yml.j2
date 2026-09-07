@@ -38,6 +38,13 @@ scrape_configs:
           switch_name: '{{ sw.name }}'
           switch_type: '{{ sw.type }}'
 {% endfor %}
+{% for sw in room1_switches %}
+      - targets: ['{{ sw.ip }}']
+        labels:
+          switch_name: '{{ sw.name }}'
+          switch_type: '{{ sw.type }}'
+          switch_location: '{{ sw.locate }}'
+{% endfor %}
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
