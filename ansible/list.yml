@@ -33,6 +33,6 @@ hostel_switches:
   - {type: DLINK, name: H5F2R2U3.swhostel.lp, ip: 10.20.0.84, locate: Hostel}
   - {type: DLINK, name: H5F4R2U2.swhostel.lp, ip: 10.20.0.155, locate: Hostel}
   - {type: DLINK, name: H5F2R2U1.swhostel.lp, ip: 10.20.0.171, locate: Hostel}
-  room1_switches:
+room1_switches:
   #Room1
   - {type: HP, name: SW-CORE.lab.lp, ip: 192.168.38.15, locate: Lab}
